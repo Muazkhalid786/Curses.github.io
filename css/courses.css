@@ -4,10 +4,16 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../img/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
 nav {
     color: white;
     height: 10vh;
-    background-color: #090446;
     display: flex;
     justify-content: space-between;
     align-items: center;

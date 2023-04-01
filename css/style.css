@@ -4,10 +4,17 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+#main {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../img/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
 nav {
     color: white;
     height: 10vh;
-    background-color: #090446;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,6 +46,7 @@ nav ul li a:hover {
     color: #090446;
 }
 
+
 #heading {
     margin: 20px;
 }
@@ -49,10 +57,9 @@ nav ul li a:hover {
 }
 
 #hero {
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../img/background.jpeg");
+   
     height: 92vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -91,9 +98,114 @@ nav ul li a:hover {
     color: black;
 }
 
-
-
 .langImg {
     width: 20px;
     height: 20px;
+}
+
+
+
+.iconImg {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+
+#features {
+    display :grid;
+    
+    grid-template-columns: auto auto;
+}
+
+.feature {
+    border-radius: 20px;
+    width: 70%;
+    border: 2px solid black;
+    height: 100px;
+    margin: 30px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.feature:hover {
+    transform: scale(1.06);
+}
+
+.figure {
+    margin: 20px 0px;
+    font-size: 50px;
+}
+.feature-info {
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+#mainNumbers {
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../img/courses/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+
+}
+
+#numbers {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 100px;
+    color: white;
+}
+
+#Numberheading {
+    display: inline-block;
+    margin: 40px;
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+.number {
+    margin: 10px 40px
+}
+#head{
+    color: white;
+    background-color: #090446;
+}
+footer {
+    background-color: #090446;
+    color: white;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: bottom;
+    
+    
+}
+
+
+#comparison {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+table {
+    margin: 30px 0px;
+}
+#comparison table tr {
+    padding: 20px 0px;
+    align-items: center;
+}
+
+
+table * {
+    margin: 10px 0px;
+    
 }

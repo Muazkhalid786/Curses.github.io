@@ -13,7 +13,7 @@
 <body>
     <nav>
        
-        <h1 id="heading"> Naughty UET</h1>
+        <h1 id="heading">Naughty UET</h1>
      
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -25,18 +25,31 @@
     </nav>
 
 
-    <div id="hero">
-        <h1>Contact Us</h1>
-        <p>Contact Us in Case of Queries</p>
-        <input type="text" name="" id="" placeholder="Enter your name">
-        <br>
-        <input type="email" name="" id="" placeholder="Enter your email">
-        <br>
-        <textarea name="" placeholder="Enter your message" id="" cols="30" rows="10"></textarea>
-        <br>
-        <button class="btn">Send Message</button>
-    </div>
+    <center>
+        <h1 id="heading">Contact Us</h1>
+        <p id="desc">Fill the form given below in order to contact us in case of any problem</p>
+    </center>
 
+
+    <form id="form">
+        <input type="text" placeholder="Enter your name..." name="" id="" required>
+        <input type="email" placeholder="Enter your email..." name="" required>
+        <textarea placeholder="Enter your message..." name="" id="" cols="30" rows="10" required></textarea>
+        <button id="sendBtn">Send Message</button>
+    </form>
+    <footer>
+        <h3>Developed by: Psycho, Zaibi & Majo</h3>
+    </footer>
+
+
+    <script>
+        let form = document.getElementById("form");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            alert("Your message has been sent successfully")
+        })
+    </script>
+    
   
 </body>
 </html>
